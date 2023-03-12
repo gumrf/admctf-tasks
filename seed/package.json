@@ -1,0 +1,20 @@
+{
+  "name": "seed",
+  "version": "1.0.0",
+  "description": "seed db",
+  "main": "seed.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "bcrypt": "^5.1.0",
+    "js-yaml": "^4.1.0",
+    "prisma": "^4.11.0"
+  },
+  "prisma": {
+    "seed": "node seed.js"
+  }
+}

@@ -1,0 +1,169 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Commands to know:
+// `npx prisma generate` - update TypeScript definitions based on this schema
+// `npx prisma db push` - push the schema changes to the database
+// `npx prisma studio` - open the Studio, which allows you to edit the schema.
+// `npx prisma migrate reset` - reset the migrations to the last version. This will reset the DB and run the seed script
+// `npx prisma migrate dev --name <descriptive-name>` - generate a migration file for any changes you make to the schema (this will be committed).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+model User {
+  id Int @id @default(autoincrement())
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  email    String @unique
+  password String
+  name     String
+
+  role Role @default(USER)
+
+  team   Team? @relation(fields: [teamId], references: [id])
+  teamId Int?
+
+  tasks     Task[]
+  solutions Solution[]
+  likes     TaskLike[]
+}
+
+model Team {
+  id    Int    @id @default(autoincrement())
+  name  String @unique
+  token String @unique @default(uuid())
+
+  captainId Int
+  members   User[]
+
+  solutions Solution[]
+}
+
+// enum Category {
+//   WEB
+//   CRYPTO
+//   FORENSICS
+//   OSINT
+//   REVERSE
+//   MISC
+// }
+
+// model Label {
+//   id    Int     @id @default(autoincrement())
+//   name  String  @unique
+//   color String?
+
+//   task   Task?   @relation(fields: [taskId], references: [id])
+//   taskId String?
+// }
+
+model TaskLabel {
+  taskId  String @id
+  labelId String
+}
+
+model Category {
+  id    Int     @id @default(autoincrement())
+  name  String  @unique
+  title String  @unique
+  about String?
+  Task  Task[]
+}
+
+model Task {
+  id Int @id @default(autoincrement())
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  title       String
+  description String
+  flag        String @unique
+  points      Int    @default(1000)
+
+  categoryId Int
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  authorId Int
+  author   User @relation(fields: [authorId], references: [id])
+
+  labels String?
+  hint   String?
+
+  status TaskStatus?
+
+  solutions Solution[]
+  likes     TaskLike[]
+}
+
+model TaskStatus {
+  id Int @id @default(autoincrement())
+
+  task   Task @relation(fields: [taskId], references: [id])
+  taskId Int  @unique
+
+  active Boolean @default(false)
+  public Boolean @default(false)
+}
+
+model TaskLike {
+  id        Int      @default(autoincrement())
+  createdAt DateTime @default(now())
+
+  task   Task @relation(fields: [taskId], references: [id])
+  taskId Int
+
+  user   User @relation(fields: [userId], references: [id])
+  userId Int
+
+  @@unique([taskId, userId])
+}
+
+model Solution {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+
+  flag      String
+  isCorrect Boolean @default(false)
+
+  task   Task @relation(fields: [taskId], references: [id])
+  taskId Int
+
+  team   Team @relation(fields: [teamId], references: [id])
+  teamId Int
+
+  user   User @relation(fields: [userId], references: [id])
+  userId Int
+}
+
+model Settings {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name  String @unique
+  value String
+}
+
+model Event {
+  id        Int      @id @default(autoincrement())
+  name      String
+  startDate DateTime
+  endDate   DateTime
+  location  String
+  format    String
+}

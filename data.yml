@@ -1,0 +1,374 @@
+misc:
+  - title: Flag format
+    description: |
+      Во всех тасках флаг будет иметь формат: **ADM{Y0u_ar3_W3LC0ME}**
+      
+      Если флаг имеет другой формат, об этом будет сказано.
+    category: misc
+    complexity: easy
+    points: 1000
+    flag: ADM{Y0u_ar3_W3LC0ME}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+
+  - title: Feedback
+    description: |
+      Нам очень важно получить от вас обратную связь, поэтому мы сделали [опрос](https://forms.gle/SewfFWm77CnsgvmW9).
+    category: misc
+    complexity: easy
+    points: 1000
+    flag: ADM{thx_f0r_att3nt1on}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+
+web:
+  - title: You really brawler
+    description: |
+      Бравлеры создали [сайт](http://you-really-brawler.ctfboard.ru) для девочек, но какие-то роботы проникли на сайт и зарегистрировали там свои аккаунты(((
+    category: web
+    complexity: easy
+    points: 1000
+    flag: ADM{sh3lly_Putb_legi}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+
+  - title: Just Web Task
+    description: |
+      Каждый раз админ забывает свой пароль... [сайт](http://just-web-task.ctfboard.ru)
+    category: web
+    complexity: hard
+    points: 1000
+    flag: ADM{h3Y_y0u_f1nd_th1s}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+
+  - title: Rarest brawlers
+    description: |
+      У нас появился список редчайших бравлеров, интересно, какие секреты хранят эти бравлеры в своей [базе данных](http://rarest-brawlers.ctfboard.ru) |0_0/
+    category: web
+    complexity: medium
+    points: 1000
+    flag: ADM{AmaZingFlag_YouAreREALLY_TOP_Of_BRAWLERS}
+    author:
+      name: rmnvlv
+      contact: "rmnvlv@ctfboard.ru"
+
+  - title: mamas-cookie
+    description: |
+      Я очень люблю печенье, мама мне приготовила много печенья, и пока я буду есть печенье попробуй найти тут флаг. 
+      
+      [Печенье](http://mamas-cookie.ctfboard.ru)
+      
+      [Source code](https://mega.nz/folder/xqAgRCJI#3MVqeaAOmLZuWakydxEEkw)
+    category: web
+    complexity: medium
+    points: 1000
+    flag: ADM{Swee3333t@maz1ngc00kie5_youGetIt}
+    author:
+      name: rmnvlv
+      contact: "rmnvlv@ctfboard.ru"
+
+forensics:
+  - title: free-btc
+    description: |
+      На макару была соверешена кибер атака, нам прислали [отчет](https://mega.nz/file/865TDBaJ#YL8dnaLneohKiC34YXU9DNSI6ZZ1JvxhipqxTv64UvM), попробуй помочь найти злоумышленника. 
+      
+      Формат флага - ADM{username}
+    category: forensics
+    complexity: medium
+    points: 1000
+    flag: ADM{Minadri_udri}
+    author:
+      name: rmnvlv
+      contact: "rmnvlv@ctfboard.ru"
+    files:
+      - incident017.zip
+
+  - title: traffic
+    description: |
+      Когда админ делал таск, он решил отправить флаг своим друзьям, но он
+      не знал что его прослушивали... [прослушка](https://mega.nz/file/EqgniRaS#3I8OtzS2xV6rKsCxS64aQWYXFYAP8Wv7aOzwEGoeoDA)
+    category: forensics
+    complexity: easy
+    points: 1000
+    flag: ADM{Sh4rk_w1th0uT_w4t3r}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - traffic.pcapng
+  
+  - title: Feduk
+    description: |
+      А [морячок](https://mega.nz/file/NjBFSboK#grxAZoOW1hTB9mcmyD9wFZJTg5cYE4X5MC4Lsecrp9E) то БлАтНоЙ!!!)))
+    category: forensics
+    complexity: medium
+    points: 1000
+    flag: ADM{0H_SH1T_1M_S0RRY}
+    author:
+      name: nixes
+      contact: "n1x3s@ctfboard.ru"
+    files:
+      - Morak'.png
+
+  - title: Strange process
+    description: |
+      На компьютере  Димы, похоже, был запущен вредоносный процесс. 
+      Исследовав дамп памяти мы нашли в нем исполнение **evil.exe**. 
+
+      Пример флага: ADM{Pid_DateTime}, [DateTimeHelper](http://datetimetoticks.com/)
+
+      Проблемный файл: [Archive.zip](https://mega.nz/file/WYpUUR6D#XYOrZPGVMd7SBlzCXpLqZwEqigDkdo8v3BrmCSbpumw)
+    category: forensics
+    complexity: medium
+    points: 1000
+    flag: ADM{3632_637392781150000000}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - Archive.zip
+
+  - title: X-file
+    description: |
+      Мы получили странный [файл](https://mega.nz/file/RjpXUIwC#IF_9Bdl2AQfpntEnxbedKVd3Xd4Rddp5_-7qiM2RJ0E), возможно он поможет найти флаг, попробуй его открыть.
+    category: stego
+    complexity: easy
+    points: 1000
+    flag: ADM{g0_n3xt_really_3asy}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - secret
+
+  - title: audiotask
+    description: |
+      Ух, ты, кто-то прислал нам [гс](https://mega.nz/file/8zpBWDSQ#ltfHm6IFgyU-D7ji5s7Np8Qf5buQsNdXJKjiZK5klBo) и спрятал там флаг.
+    category: stego
+    complexity: easy
+    points: 1000
+    flag: ADM{W0w_th1s_fl4g}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - output1.wav
+
+  - title: audiotask2
+    description: |
+      У нас получилось расшифровать прошлый файл и мы решили сделать свой [аудиосекрет](https://mega.nz/file/k2ZW3RQb#dsV3JR_jH8yDMQuJ5NsgGgiesRUklNFgVx6z6v6a3Xw).
+    category: stego
+    complexity: easy
+    points: 1000
+    flag: ADM{H1_th1s_1s_flag}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - audiosecret.wav
+
+  - title: gigameme
+    description: |
+      А вы любите мемы? Насколько deep вы готовы enjoy, чтобы добраться до dark fantasy?
+      
+      [meme](https://mega.nz/file/53wTyTAB#SrBXgt0npv0piN_xSw8OKG7j0GWzYw2W_50qLtTcMYk).
+    category: stego
+    complexity: medium
+    points: 1000
+    flag: ADM{1_L0ve_f0otb4ll}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - memo.jpg
+
+  - title: what-this
+    description: |
+      На нашу корпоративную почту был отправлен [файл](https://mega.nz/file/Ri4kjRyJ#_In9wmUy3-DUr53ruSobUP5r-Lxi_VJWWQlbw9_blJk) с коммерческим предложением, но он оказался совершенно пустым(или нет?)
+    category: stego
+    complexity: hard
+    points: 1000
+    flag: ADM{Y0u_were_sc4mmed_with_PDF}
+    author:
+      name: nixes
+      contact: "n1x3s@ctfboard.ru"
+    files:
+      - Rules
+
+crypto:
+  - title: From A to Z
+    description: |
+      Для решения этого зашифрованного таска потребуется только простой шифр замены.
+      Переставьте буквы от А до Z.
+      
+      **nzpziz_rh_nb_uze_fmrevihrgb**
+    category: crypto
+    complexity: easy
+    points: 1000
+    flag: ADM{makara_is_my_fav_university}
+    author:
+      name: Max
+      contact: "max@ctfboard.ru"
+
+  - title: Jonathan_Joestar
+    description: |
+      Чебзик открыл для себя новую соц сеть, вот его первый пост, но что-то странное в [нем](https://mega.nz/file/RzowHB7a#HMT5U_ijYzNHf8Kglpm2fNWNDVAGTvTHkrv1YjlHvuM).
+    category: crypto
+    complexity: medium
+    points: 1000
+    flag: ADM{tw1tt3r_msg_fl4g}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - message.txt
+
+  - title: Gammaconda
+    description: |
+      Злодей залез на сервер и изменил алгоритм шифрования. Теперь он не работает :( Видимо он ненавидел питон. 
+      Сможете ли вы восстановить [алгоритм](https://mega.nz/file/c7QkyKzb#IB7IHLVKRT7kqF-Q6bDSGl7IPYaMljyrTm4WvdUnbmA) и расшифровать флаг?
+      
+      Флаг лежит в **Flag.txt**.
+    category: crypto
+    complexity: hard
+    points: 1000
+    flag: ADM{I_hat3_pyTh0n_4nD_H4t3_th15_t4sk}
+    author:
+      name: rmnvlv
+      contact: "rmnvlv@ctfboard.ru"
+    files:
+      - Gammaconda.rar
+
+  - title: thx for online services
+    description: |
+      Вы устроились на работу в компанию, которая не так давно потерпела
+      кибер атаку. Сотрудники утверждают, что надежно шифровали пароли. Вот один из
+      их зашифрованных паролей:
+
+      **QURNe2dvX2dvX3Nrb19rb3Z9**
+
+      Сможете ли вы расшифровать пароль админа??
+    category: crypto
+    complexity: easy
+    points: 1000
+    flag: ADM{go_go_sko_kov}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+
+osint:
+  - title: After Work
+    description: |
+      Я работю специалистом по ИБ в одной из компаний Санкт-Петербурга. Сегодня
+      был долгий день и после работы я решил зайти поесть в кофейню. Я попробовал все сэндвичи
+      в этом кафе, но так вышло, что я забыл заплатить. Напишите мне сколько я должен.
+      Вот [фото](https://mega.nz/file/Z2pxzKpK#SKsCfi9z1H9UxLdn-W6WFcrk4SR959Nzg6hGvmbXS2A) с работы. 
+
+      Флаг - стоимость заказа
+    category: osint
+    complexity: hard
+    points: 1000
+    flag: ADM{1260}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - photo.jpg
+
+  - title: Music Shop
+    description: |
+      Привет, подписчики, я купил себе пластинку. Вот [фото](https://mega.nz/file/9nZhwbJS#W0MBMWQBzMnkF8eJttVPdcmaf9XPDY2cOS5S6Tj36mY), слабо узнать где я купил ее?
+
+      Флаг - название торгового центра, возможно вам понадобится этот [сервис](https://translitonline.com/)
+    category: osint
+    complexity: easy
+    points: 1000
+    flag: ADM{Narvskij}
+    author:
+      name: r4r3g0d
+      contact: "r4r3g0d@ctfboard.ru"
+    files:
+      - IMG.heic
+
+  - title: Church
+    description: |
+      Кого здесь похронили?
+
+      Вот [фото](https://mega.nz/file/I2hSxCwZ#uJhI_DSEm3Jn66q_6LeVkADwkocenEHDaPU5kP6pCOk)?
+
+      **hint: Флаг - ADM{FirstName_SecondName}**
+    category: osint
+    complexity: easy
+    points: 1000
+    flag: ADM{Immanuel_Kant}
+    author:
+      name: rmnvlv
+      contact: "rmnvlv@ctfboard.ru"
+    files:
+      - Снимок.PNG
+
+reverse:
+  - title: toEz4u
+    description: |
+      Какой-то недоверчивый приятель решил проверить мои продвинутые знания в пользовании пк. 
+      Он отправил мне [файл](https://mega.nz/file/QihTSKCY#D7AZ4X0VYHL3-sR7V1bBe98tNUtkM7t247MNwDW9DVM) и попросил найти пароль к нему. 
+      Но он не знал, что я владею скрытной техникой shift+F12!!!
+    category: reverse
+    complexity: easy
+    points: 1000
+    flag: ADM{Too_ez_Fl49}
+    author:
+      name: SimenDryr
+      contact: "simendryr@ctfboard.ru"
+    files:
+      - toEz4uю
+
+  - title: Trans Po
+    description: |
+      Злой гений преступного мира собирается привести свой план в действие, но ему должен помешать ТЫ! 
+      Найди [ключ](https://mega.nz/file/1uZ0SBiB#1PsTyvHdYjcDqJzXj2t4FB9Bi_8io0T-NMvZfb4y2Q4) до того как не стало слишком поздно… 
+      Наше бюро смогло предположить, что этот “Гений” использует какое-то довольно старое шифрование…
+    category: reverse
+    complexity: medium
+    points: 1000
+    flag: ADM{Slishkom_Prostaya_Perestanovka}
+    author:
+      name: SimenDryr
+      contact: "simendryr@ctfboard.ru"
+    files:
+      - TranspoXXX.cpp
+
+  - title: I need
+    description: |
+      В 3 часа ночи раздается звонок. На другом конце провода начальник просит восстановить систему от атаки. 
+      На нашу компанию обрушился MotherOfVirus!!! Прошу помоги!!! 
+      Но тебе нужно найти [пароль…](https://mega.nz/file/o7QQjLiA#3mC6WnKUVXBO7xQ7YCd1162NnIysu960AiEk6sjZW08).
+    category: reverse
+    complexity: medium
+    points: 1000
+    flag: ADM{Drop_Me_Some_Words_000}
+    author:
+      name: SimenDryr
+      contact: "simendryr@ctfboard.ru"
+    files:
+      - GiveMeSome.cpp
+
+  - title: I need more
+    description: |
+      MotherOfVirus все еще ломает сервера и переключилась на дочерние компании!!
+      Остался последний раунд по полной его деактивации! 
+      Все зависит только от [тебя](https://mega.nz/file/F35BFLZQ#GYuD571HkOUu26j6LHvSZnTrn_zKmMj20KbelQGxYsk)!
+    category: reverse
+    complexity: hard
+    points: 1000
+    flag: ADM{I_h4ve_Got_DBG}
+    author:
+      name: SimenDryr
+      contact: "simendryr@ctfboard.ru"
+    files:
+      - GigaDBG.cpp

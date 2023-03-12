@@ -1,0 +1,88 @@
+version: "3.9"
+
+services:
+    import-tasks:
+        container_name: import-tasks
+        image: ctfboard/import-tasks
+        networks:
+            - backend
+        volumes:
+            - ./data.yml:/app/data.yml
+        environment:
+            DATABASE_URL: ${DATABASE_URL}
+            ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+
+    you-really-brawler:
+        container_name: you-really-brawler
+        image: ctfboard/you-really-brawler:latest
+        labels:
+            - "traefik.enable=true"
+            - "traefik.docker.network=traefik"
+            - "traefik.http.routers.you-really-brawler.entrypoints=websecure"
+        # build:
+        #     context: ./web/you-really-brawler
+        #     dockerfile: Dockerfile
+        restart: always
+        networks:
+            - traefik
+            - you-really-brawler
+
+    rarest-brawlers:
+        container_name: rarest-brawlers
+        image: ctfboard/rarest-brawlers:latest
+        labels:
+            - "traefik.enable=true"
+            - "traefik.docker.network=traefik"
+            - "traefik.http.routers.rarest-brawlers.entrypoints=websecure"
+        # build:
+        #     context: ./web/rarest-brawlers
+        #     dockerfile: Dockerfile
+        restart: always
+        networks:
+            - traefik
+            - rarest-brawlers
+    
+    just-web-task:
+        container_name: just-web-task
+        image: ctfboard/just-web-task:latest        
+        labels:
+            - "traefik.enable=true"
+            - "traefik.docker.network=traefik"
+            - "traefik.http.routers.just-web-task.entrypoints=websecure"
+            
+        # build:
+        #     context: ./web/just-web-task
+        #     dockerfile: Dockerfile
+        restart: always
+        networks:
+            - traefik
+            - just-web-task
+
+    mamas-cookie:
+        container_name: mamas-cookie
+        image: ctfboard/mamas-cookie:latest
+        labels:
+            - "traefik.enable=true"
+            - "traefik.docker.network=traefik"
+            - "traefik.http.routers.mamas-cookie.entrypoints=websecure"
+        # build:
+        #     context: ./web/mamas-cookie
+        #     dockerfile: Dockerfile
+        restart: always
+        networks:
+            - traefik
+            - mamas-cookie
+
+networks:
+    traefik:
+        external: true
+    backend:
+        internal: true
+    you-really-brawler:
+        internal: true 
+    rarest-brawlers:
+        internal: true
+    just-web-task:
+        internal: true
+    mamas-cookie:
+        internal: true
